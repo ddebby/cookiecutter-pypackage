@@ -34,6 +34,11 @@ packages = [
     { include = "tests", format = "sdist" },
 ]
 
+[[tool.poetry.source]]
+name = "tsinghua"
+default = true
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
 [tool.poetry.dependencies]
 python = ">=3.6.2,<4.0"
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
