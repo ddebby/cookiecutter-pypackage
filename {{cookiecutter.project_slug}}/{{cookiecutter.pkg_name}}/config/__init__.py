@@ -1,5 +1,5 @@
-"""
-Configuration center.
+"""Configuration center.
+
 Use https://www.dynaconf.com/
 """""
 import os

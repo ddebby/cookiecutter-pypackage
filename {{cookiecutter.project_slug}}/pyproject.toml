@@ -40,9 +40,9 @@ default = true
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 
 [tool.poetry.dependencies]
-python = ">=3.6.2,<4.0"
+python = ">=3.7,<4.0"
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
-click = "8.0.1"
+click = "8.0.4"
 {%- endif %}
 
 dynaconf = "^3.1.9"
@@ -58,13 +58,13 @@ pytest-cov  = { version = "^2.12.0", optional = true}
 tox  = { version = "^3.20.1", optional = true}
 virtualenv  = { version = "^20.2.2", optional = true}
 pip  = { version = "^20.3.1", optional = true}
-mkdocs  = { version = "^1.1.2", optional = true}
-mkdocs-include-markdown-plugin  = { version = "^1.0.0", optional = true}
-mkdocs-material  = { version = "^6.1.7", optional = true}
-mkdocstrings  = { version = "^0.15.2", optional = true}
-mkdocs-material-extensions  = { version = "^1.0.1", optional = true}
+mkdocs  = { version = "^1.4.2", optional = true}
+mkdocs-include-markdown-plugin  = { version = "^3.9.0", optional = true}
+mkdocs-material  = { version = "^8.5.10", optional = true}
+mkdocstrings  = { version = "^0.18.1", optional = true}
+mkdocs-material-extensions  = { version = "^1.1.1", optional = true}
 twine  = { version = "^3.3.0", optional = true}
-mkdocs-autorefs = {version = "^0.2.1", optional = true}
+mkdocs-autorefs = {version = "^0.4.1", optional = true}
 pre-commit = {version = "^2.12.0", optional = true}
 toml = {version = "^0.10.2", optional = true}
 bump2version = {version = "^1.0.1", optional = true}

@@ -1,4 +1,4 @@
-"""Test log"""
+"""Test log."""
 import pytest
 
 from {{cookiecutter.project_slug}}.config.log import update_log_level
@@ -14,6 +14,6 @@ from {{cookiecutter.project_slug}}.config.log import update_log_level
     ]
 )
 def test_log_level(debug: bool, level: str, expect_value):
-    """Test log level"""
+    """Test log level."""
     log_level_name = update_log_level(debug, level)
     assert log_level_name == expect_value

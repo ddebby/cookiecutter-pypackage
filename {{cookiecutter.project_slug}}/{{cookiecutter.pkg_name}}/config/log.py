@@ -1,4 +1,4 @@
-"""Log"""
+"""Log."""
 import logging
 import os
 from logging.config import dictConfig
@@ -16,7 +16,7 @@ def verbose_formatter(verbose: int) -> str:
 
 
 def update_log_level(debug: bool, level: str) -> str:
-    """update log level"""
+    """Update log level."""
     if debug is True:
         level_num = logging.DEBUG
     else:
