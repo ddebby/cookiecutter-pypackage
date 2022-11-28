@@ -16,7 +16,7 @@ lint:
 unittest:
 	pytest
 
-coverage:
+cov:
 	pytest --cov=$(sources) --cov-branch --cov-report=term-missing tests
 
 pre-commit:

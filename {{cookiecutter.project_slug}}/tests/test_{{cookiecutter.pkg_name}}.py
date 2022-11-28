@@ -24,9 +24,8 @@ def test_content(response):
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
     del response
+    
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
-
-
 def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
